@@ -10,7 +10,7 @@ Intervals](https://pharr.org/matt/blog/2022/03/14/sampling-float-intervals.html)
 for further context and documentation.
 
 The main entrypoints are:
-- `UniformSample01()`: returns uniform floating-point values in [0,1).
+- `Sample01()`: returns uniform floating-point values in [0,1).
 - `SampleToPowerOfTwo(x)`: uniformly samples in [0,2^x).
 - `SampleRange(a, b)`: uniformly samples in [a,b).
 
@@ -21,7 +21,7 @@ uint64_t Random64Bits();
 uint32_t Random32Bits();
 ```
 
-For previous work, see also:
+For previous implementations of these ideas, see:
 - Christoph Conrads's [Rademacher Floating Point
 Library](https://gitlab.com/christoph-conrads/rademacher-fpl), in
 particular the
